@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" src="normalize.css">
+    <link rel="stylesheet" type="text/css" href="feedback.css" media="screen">
+    <title>Galley</title>
+    <!--Name: Ujjwal Thapa Magar StudentID: 8766208 email: uthapamagar6208@conestogac.on.ca -->
+</head>
+<body>
+    <header>
+        <div class="row">
+          <div class="column">
+            <img class ="header_image" src="images/big_images/Average-car-length.jpg" alt="logo">
+          </div>
+          <div class="column">
+            <h2>
+              Cyber Monday Sale 50% off
+            </h2>
+          </div>
+        </div>     
+      </header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+          <li class="dropdown"><a href="table.html" class="active">Price Table <i class="fas fa-caret-down" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="table.html">Prius</a></li>
+              <li><a href="table.html">C-HR</a></li>
+              <li><a href="table.html">Rav4</a></li>
+              <li><a href="table.html">Lexus</a></li>
+            </ul>
+          </li>
+          <li><a href="video.html">Video</a></li>
+          <li class="dropdown"><a href="#" class="active">Social Media <i class="fas fa-caret-down" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.facebook.com/toyotacanada/">Facebook</a></li>
+              <li><a href="https://www.instagram.com/toyotausa/">Instagram</a></li>
+              <li><a href="https://twitter.com/toyotacanada">Twitter</a></li>
+              <li><a href="https://www.linkedin.com/company/toyota-canada-inc-/?originalSubdomain=ca">Linkendin</a></li>
+            </ul>
+          </li>
+          <li><a href="image.html">Gallery</a></li>
+          <li><a href="feedback.html">FeedBack</a></li>
+        </ul>
+        <img class ="logo" src="images/logo/car_logo.jpg" alt="logo">
+      </nav>
+      <div class="container">
+        <header>
+            <h1>CUSTOMER FEEDBACK WEB FORM</h1>
+        </header>
+        
+        <section class="content">
+        <main>
+            <fieldset>
+                <legend> Personal Info</legend>
+                <form action="" method="post">
+                    <div>
+                        <label for="name"> First Name:</label>
+                        <input type="text" id="name" name="userName" placeholder="Enter first name">
+                    </div>
+                    <div>
+                        <label for="name"> Last Name:</label>
+                        <input type="text" id="name" name="userName" placeholder="Enter first name">
+                    </div>
+                    <div>
+                        <label for="address"> Address: </label>
+                        <input type="text" id="address" name="userAddress" placeholder="Denton Avenue">
+                    </div>
+                    <div>
+                        <label for="zipCode">ZIP Code:</label>
+                        <input type="text" name="zipcode" id="zipcode"pattern="[0-9]{5}" placeholder="12345" >
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="userEmail" placeholder="test@test.com">
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" placeholder="************">
+                    </div>
+                    <div>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                    </div>
+                    <div>
+                      <label for="studentID"> Agent ID:</label>
+                      <input type="number" placeholder="8766208" id="studentID" name="studentID">
+                  </div>
+                </form>
+            </fieldset>   
+        </main>
+        <aside>
+            <fieldset>
+                <legend>Sales Branch Info</legend>
+                <form action="" method="post">
+                    <div>
+                        <label for="start">Purchase date:</label>
+                        <input type="date" id="start" name="trip-start" value="2018-07-22" min="2008-01-01" max="2021-12-31">
+                    </div>
+                    <div>
+                        <p>Please Enter Types Of Vechile:</p>
+                        <input type="radio" name="vechile_types" id="SUV" value="SUV">
+                        <label for="domestic">SUV </label><br>
+                        <input type="radio" name="vechile_types" id="truck" value="truck">
+                        <label for="international">Truck</label>
+                    </div>
+                    <div>
+                        <p>Service Rating:</p>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="very satisfied">
+                        <label for="very satisfied"> Very Satisfed</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="satisfied">
+                        <label for="satisfied"> Satisfied</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="not satisfied">
+                        <label for="Not Satisfed"> Not Satisfed</label><br><br>
+                    </div>
+                    <div>
+                        <label for="comment"> Comment:</label>
+                        <textarea name="review" id="review" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </fieldset>   
+        </aside>
+        </section>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+      <footer>
+        <nav id="footer_nav">
+            <!-- First level UL only for the footer -->
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="image.html">Gallery</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        &copy; Ujjwal Thapa Magar ID:8766208  Email: uthapamagar6208@conestogac.on.ca
+    </footer>
+</body>
+</html>
